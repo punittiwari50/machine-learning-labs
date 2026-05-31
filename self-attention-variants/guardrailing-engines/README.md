@@ -48,6 +48,15 @@ layer can be reviewed and updated independently.
 4. Use `@ML CI/CD Release Engineer` to enforce release gates and deployment checks.
 5. Use `@NIM Orchestration Guardrails` for NVIDIA NIM type-specific orchestration validation.
 
+## One-Command Validation
+
+Run full validation (flake8 + mypy + guardrailing notebook sweep) and generate a
+timestamped report plus `validation-report-latest.md`:
+
+```bash
+wsl -d Ubuntu -- bash -lc "source ~/.bashrc_dev; source ~/APPS_VENV/python_venv/run_3_14_2/bin/activate; /mnt/c/DEV/PROJECTS/ML_BASICS/machine-learning-labs/self-attention-variants/guardrailing-engines/tested/run_full_validation.sh"
+```
+
 ## Minimal Guardrail Checklist
 
 - Every external boundary has explicit validation or filtering.
