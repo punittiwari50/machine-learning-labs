@@ -1,5 +1,7 @@
 from __future__ import annotations
 
+# mypy: ignore-errors
+
 import math
 import os
 import time

@@ -1,0 +1,8 @@
+[flake8]
+max-line-length = 88
+exclude = .git,__pycache__
+per-file-ignores =
+    peft-types/_generate_transformer_peft_notebooks.py:E501
+    peft-types/advanced/_generate_advanced_matrix.py:E501
+    peft-types/basic/_generate_basic_matrix.py:E501
+    vulnerability-defenses/_generate_vulnerability_notebooks.py:E501,W291
