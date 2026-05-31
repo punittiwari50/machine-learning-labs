@@ -1,0 +1,5 @@
+{
+  "variant": "Scaled Dot-Product",
+  "latency_ms": 0.415835999774572,
+  "mse_vs_dense": 0.0
+}

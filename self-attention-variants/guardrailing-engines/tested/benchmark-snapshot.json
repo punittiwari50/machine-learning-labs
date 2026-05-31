@@ -1,0 +1,47 @@
+{
+  "generated_at": "2026-05-31",
+  "metrics": {
+    "input-guardrails_tested.ipynb": {
+      "mean_latency_ms": 2.0402534333849567,
+      "p95_latency_ms": 2.730845650148693,
+      "throughput_rows_per_sec": 147040.55637944647,
+      "assertions_passed": true
+    },
+    "retrieval-guardrails_tested.ipynb": {
+      "mean_latency_ms": 1.7826000667203818,
+      "p95_latency_ms": 1.9973752501300621,
+      "throughput_rows_per_sec": 168293.4975717455,
+      "assertions_passed": true
+    },
+    "generation-guardrails_tested.ipynb": {
+      "mean_latency_ms": 1.9548306999998506,
+      "p95_latency_ms": 2.437269549886878,
+      "throughput_rows_per_sec": 153465.97533997337,
+      "assertions_passed": true
+    },
+    "tool-action-guardrails_tested.ipynb": {
+      "mean_latency_ms": 1.8914349666829366,
+      "p95_latency_ms": 2.3114706000342267,
+      "throughput_rows_per_sec": 158609.73561576824,
+      "assertions_passed": true
+    },
+    "post-generation-delivery-guardrails_tested.ipynb": {
+      "mean_latency_ms": 1.9936841666852463,
+      "p95_latency_ms": 2.5835106001522936,
+      "throughput_rows_per_sec": 150475.18810303247,
+      "assertions_passed": true
+    },
+    "runtime-infrastructure-guardrails_tested.ipynb": {
+      "mean_latency_ms": 1.8627731999458774,
+      "p95_latency_ms": 2.2601469500386884,
+      "throughput_rows_per_sec": 161050.20192942247,
+      "assertions_passed": true
+    },
+    "human-in-the-loop-guardrails_tested.ipynb": {
+      "mean_latency_ms": 1.9371736999952798,
+      "p95_latency_ms": 2.242976000047747,
+      "throughput_rows_per_sec": 154864.79090684073,
+      "assertions_passed": true
+    }
+  }
+}

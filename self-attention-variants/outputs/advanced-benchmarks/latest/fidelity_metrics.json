@@ -1,0 +1,5 @@
+{
+  "sparse_mse_vs_dense": 0.0016610855236649513,
+  "linear_mse_vs_dense": 2.2789788999943994e-05,
+  "gqa_mse_vs_dense": 0.02515852078795433
+}

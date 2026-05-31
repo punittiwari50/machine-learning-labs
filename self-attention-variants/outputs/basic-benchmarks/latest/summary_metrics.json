@@ -1,0 +1,6 @@
+{
+  "timestamp_utc": "2026-05-31T18:31:05.770891+00:00",
+  "classifier_accuracy": 0.5,
+  "best_by_latency": "Local Window",
+  "best_by_fidelity": "Scaled Dot-Product"
+}

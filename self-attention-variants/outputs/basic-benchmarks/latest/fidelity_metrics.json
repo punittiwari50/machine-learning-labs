@@ -1,0 +1,5 @@
+{
+  "multi_head_mse_vs_dense": 7.611654837091919e-06,
+  "causal_mse_vs_dense": 0.016171956434845924,
+  "local_window_mse_vs_dense": 0.009150044992566109
+}

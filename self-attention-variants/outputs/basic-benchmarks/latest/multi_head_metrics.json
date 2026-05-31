@@ -1,0 +1,5 @@
+{
+  "variant": "Multi-Head",
+  "latency_ms": 0.6804399999964517,
+  "mse_vs_dense": 7.611654837091919e-06
+}

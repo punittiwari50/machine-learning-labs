@@ -1,0 +1,5 @@
+{
+  "variant": "Linear",
+  "latency_ms": 2.7601040001172805,
+  "mse_vs_dense": 2.2789788999943994e-05
+}

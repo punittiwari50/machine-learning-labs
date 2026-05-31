@@ -49,6 +49,28 @@ os.environ["PYTHONHASHSEED"] = str(SEED)
 - **No hidden state** — never rely on variables set in a cell that comes later.
 - Keep cells short (< 50 lines). Extract helpers into functions within the notebook.
 
+## Runtime Device Switch (Required)
+
+Every ML notebook must include an explicit GPU/CPU runtime switch near the top:
+
+```python
+def parse_use_gpu_flag(raw_value: str) -> bool:
+	normalized = raw_value.strip().lower()
+	return normalized not in {"0", "false", "no", "off"}
+
+
+USE_GPU = parse_use_gpu_flag(os.getenv("USE_GPU", "1"))
+NO_CUDA = not USE_GPU
+RUNTIME_DEVICE = "cuda" if USE_GPU and torch.cuda.is_available() else "cpu"
+print(f"USE_GPU={int(USE_GPU)} | runtime_device={RUNTIME_DEVICE}")
+```
+
+When using `transformers.TrainingArguments`, always wire this switch:
+
+```python
+TrainingArguments(..., use_cpu=(RUNTIME_DEVICE == "cpu"))
+```
+
 ## Markdown Structure
 
 Every notebook must have:
