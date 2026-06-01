@@ -35,6 +35,12 @@ wsl -d Ubuntu -- bash -c "source ~/.bashrc_dev; source ~/APPS_VENV/python_venv/r
 wsl -d Ubuntu -- bash -c "source ~/.bashrc_dev; source ~/APPS_VENV/python_venv/run_3_14_2/bin/activate; python self-attention-variants/basic_attention_tensorflow.py"
 ```
 
+Run all variants with one command:
+
+```bash
+wsl -d Ubuntu -- bash -c "source ~/.bashrc_dev; source ~/APPS_VENV/python_venv/run_3_14_2/bin/activate; python self-attention-variants/run_attention_benchmarks.py"
+```
+
 Consolidated run across all basic+advanced scripts:
 
 ```bash
@@ -52,3 +58,16 @@ wsl -d Ubuntu -- bash -c "source ~/.bashrc_dev; source ~/APPS_VENV/python_venv/r
 - All variants use the same text-first preprocessing contract to avoid train/serve skew.
 - PyTorch variant includes a detached feature stage before training the classifier head to avoid autograd graph reuse issues.
 - Runtime device selection in PyTorch and TensorFlow respects `USE_GPU`.
+
+## Consolidated Snapshot (2026-06-01)
+
+Source: `python self-attention-variants/run_attention_benchmarks.py`
+
+| label | library | variant | runtime | accuracy | best_temp | dense_ms | sparse_ms | linear_ms | gqa_ms | sparse_mse | linear_mse | gqa_mse |
+|---|---|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| basic-numpy | numpy | - | - | 0.500000 | - | - | - | - | - | - | - | - |
+| basic-torch | pytorch | - | cuda | 0.500000 | - | - | - | - | - | - | - | - |
+| basic-tensorflow | tensorflow | - | cuda | 0.576923 | - | - | - | - | - | - | - | - |
+| advanced-numpy | numpy | advanced | - | - | 2.000000 | 0.999062 | 1.013902 | 3.127575 | 2.656416 | 0.001421 | 0.000086 | 0.023211 |
+| advanced-torch | pytorch | advanced | cuda | - | 2.000000 | 1.229437 | 2.299265 | 99.454782 | 13.687842 | 0.002035 | 0.000241 | 0.030836 |
+| advanced-tensorflow | tensorflow | advanced | cuda | - | 2.000000 | 0.477347 | 1.049525 | 84.813750 | 23.065867 | 0.002156 | 0.000020 | 0.042706 |

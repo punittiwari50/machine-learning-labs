@@ -1,0 +1,33 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "guardrail-notebook-sweep",
+			"type": "shell",
+			"command": "C:\\Windows\\System32\\wsl.exe",
+			"args": [
+				"-d",
+				"Ubuntu",
+				"--",
+				"bash",
+				"-lc",
+				"chmod +x /mnt/c/DEV/PROJECTS/ML_BASICS/machine-learning-labs/_run_guardrail_sweep.sh; /mnt/c/DEV/PROJECTS/ML_BASICS/machine-learning-labs/_run_guardrail_sweep.sh"
+			],
+			"isBackground": false
+		},
+		{
+			"label": "guardrail-notebook-sweep",
+			"type": "shell",
+			"command": "C:\\Windows\\System32\\wsl.exe",
+			"args": [
+				"-d",
+				"Ubuntu",
+				"--",
+				"bash",
+				"-lc",
+				"chmod +x /mnt/c/DEV/PROJECTS/ML_BASICS/machine-learning-labs/_run_guardrail_sweep.sh; /mnt/c/DEV/PROJECTS/ML_BASICS/machine-learning-labs/_run_guardrail_sweep.sh"
+			],
+			"isBackground": false
+		}
+	]
+}

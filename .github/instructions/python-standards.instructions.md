@@ -66,6 +66,20 @@ except FileNotFoundError as exc:
 - Use dataclasses or NamedTuple for structured data over raw dicts.
 - Avoid leaving debug-only helper methods/functions once debugging is complete.
 
+## Enterprise Quality at Every Maturity Level
+
+- Core, Basic, and Advanced implementations must all satisfy enterprise-grade quality.
+- Apply SOLID principles consistently: single responsibility, abstraction-driven design, dependency inversion where appropriate, and clear module boundaries.
+- Maturity level changes domain depth and system scope, not coding quality requirements.
+- Enforce type safety, testability mindset, and maintainability standards uniformly across all levels.
+
+## Alternative Logic in Notebooks
+
+For `.ipynb` work where one use case has multiple valid implementations:
+- Document all viable alternatives in Markdown cells with trade-offs and selection criteria.
+- Implement only the selected best approach in runnable code cells.
+- Avoid duplicate executable logic for equivalent outcomes.
+
 ## ML-Specific Conventions
 
 - Set random seeds at the top of every experiment: `np.random.seed(42)`, `tf.random.set_seed(42)`.

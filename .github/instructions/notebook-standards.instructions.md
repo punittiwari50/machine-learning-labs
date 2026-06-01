@@ -78,6 +78,11 @@ Every notebook must have:
 - **Section headers** (H2/H3) before each major stage.
 - A **summary cell** at the end with key findings and metrics.
 
+If the same use case can be implemented in multiple valid ways:
+- Document **each viable approach** in Markdown (approach outline, trade-offs, pros/cons, and recommended usage conditions).
+- Keep executable cells focused on the **single selected best approach** for the notebook objective.
+- Do not keep multiple runnable variants of the same business logic.
+
 ```markdown
 # Topic Name — End-to-End Pipeline
 **Date**: YYYY-MM-DD  
@@ -98,3 +103,10 @@ wsl -d Ubuntu -- bash -c "source ~/.bashrc_dev; source ~/APPS_VENV/python_venv/r
 - Leaving cells with errors or `[*]` execution state.
 - Hardcoded absolute Windows paths — use `pathlib.Path` with relative paths.
 - Multiple notebooks covering the same topic with slight variations.
+
+## Enterprise Quality Across Core/Basic/Advanced
+
+- Core, Basic, and Advanced notebooks must all meet enterprise quality standards.
+- Required at every level: clear boundaries, maintainable structure, meaningful naming, reproducibility, and robust error handling at I/O boundaries.
+- Apply SOLID principles in notebook code organization (single responsibility helpers, dependency boundaries, abstraction-first design where applicable).
+- Maturity level may change scope/depth of content, but must not reduce code quality standards.
