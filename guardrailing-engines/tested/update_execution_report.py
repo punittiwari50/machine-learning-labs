@@ -187,7 +187,7 @@ def _build_report(
         "## Validation Method",
         (
             "- Source of metrics: executed outputs in tested notebooks under"
-            " self-attention-variants/guardrailing-engines/tested."
+            " guardrailing-engines/tested."
         ),
         "- Benchmarks tracked per notebook:",
         "  - mean_latency_ms",
@@ -252,7 +252,7 @@ def _build_report(
             ),
             (
                 "- Snapshot is updated after each report generation at"
-                " self-attention-variants/guardrailing-engines/tested/"
+                " guardrailing-engines/tested/"
                 "benchmark-snapshot.json."
             ),
         ]

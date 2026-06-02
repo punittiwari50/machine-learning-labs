@@ -54,7 +54,7 @@ Run full validation (flake8 + mypy + guardrailing notebook sweep) and generate a
 timestamped report plus `validation-report-latest.md`:
 
 ```bash
-wsl -d Ubuntu -- bash -lc "source ~/.bashrc_dev; source ~/APPS_VENV/python_venv/run_3_14_2/bin/activate; /mnt/c/DEV/PROJECTS/ML_BASICS/machine-learning-labs/self-attention-variants/guardrailing-engines/tested/run_full_validation.sh"
+wsl -d Ubuntu -- bash -lc "source ~/.bashrc_dev; source ~/APPS_VENV/python_venv/run_3_14_2/bin/activate; /mnt/c/DEV/PROJECTS/ML_BASICS/machine-learning-labs/guardrailing-engines/tested/run_full_validation.sh"
 ```
 
 ## Minimal Guardrail Checklist

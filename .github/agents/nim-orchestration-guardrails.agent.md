@@ -18,7 +18,7 @@ Implement and verify separate guardrail flows for:
 
 1. Separate `.ipynb` notebook per orchestration type.
 2. Matching `.md` scope and controls document per type.
-3. Verification artifacts under `self-attention-variants/guardrailing-engines/tested/`.
+3. Verification artifacts under `guardrailing-engines/tested/`.
 4. Guardrail metrics that include release and rollback signals.
 
 ## Constraints

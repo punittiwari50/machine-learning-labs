@@ -116,20 +116,20 @@ Enterprise usage example:
 Guardrailing content is maintained in a dedicated module to avoid taxonomy drift.
 
 Core guardrail notebooks:
-1. [input-guardrails.ipynb](guardrailing-engines/input-guardrails.ipynb)
-2. [retrieval-guardrails.ipynb](guardrailing-engines/retrieval-guardrails.ipynb)
-3. [generation-guardrails.ipynb](guardrailing-engines/generation-guardrails.ipynb)
-4. [tool-action-guardrails.ipynb](guardrailing-engines/tool-action-guardrails.ipynb)
-5. [post-generation-delivery-guardrails.ipynb](guardrailing-engines/post-generation-delivery-guardrails.ipynb)
-6. [runtime-infrastructure-guardrails.ipynb](guardrailing-engines/runtime-infrastructure-guardrails.ipynb)
-7. [human-in-the-loop-guardrails.ipynb](guardrailing-engines/human-in-the-loop-guardrails.ipynb)
+1. [input-guardrails.ipynb](../guardrailing-engines/input-guardrails.ipynb)
+2. [retrieval-guardrails.ipynb](../guardrailing-engines/retrieval-guardrails.ipynb)
+3. [generation-guardrails.ipynb](../guardrailing-engines/generation-guardrails.ipynb)
+4. [tool-action-guardrails.ipynb](../guardrailing-engines/tool-action-guardrails.ipynb)
+5. [post-generation-delivery-guardrails.ipynb](../guardrailing-engines/post-generation-delivery-guardrails.ipynb)
+6. [runtime-infrastructure-guardrails.ipynb](../guardrailing-engines/runtime-infrastructure-guardrails.ipynb)
+7. [human-in-the-loop-guardrails.ipynb](../guardrailing-engines/human-in-the-loop-guardrails.ipynb)
 
 Extended serving and orchestration guardrails:
-1. [memory-management-serving-basic-guardrails.ipynb](guardrailing-engines/memory-management-serving-basic-guardrails.ipynb)
-2. [memory-management-serving-advanced-guardrails.ipynb](guardrailing-engines/memory-management-serving-advanced-guardrails.ipynb)
-3. [nim-multi-engine-routing-guardrails.ipynb](guardrailing-engines/nim-multi-engine-routing-guardrails.ipynb)
-4. [nim-compose-orchestration-guardrails.ipynb](guardrailing-engines/nim-compose-orchestration-guardrails.ipynb)
-5. [nim-kubernetes-orchestration-guardrails.ipynb](guardrailing-engines/nim-kubernetes-orchestration-guardrails.ipynb)
+1. [memory-management-serving-basic-guardrails.ipynb](../guardrailing-engines/memory-management-serving-basic-guardrails.ipynb)
+2. [memory-management-serving-advanced-guardrails.ipynb](../guardrailing-engines/memory-management-serving-advanced-guardrails.ipynb)
+3. [nim-multi-engine-routing-guardrails.ipynb](../guardrailing-engines/nim-multi-engine-routing-guardrails.ipynb)
+4. [nim-compose-orchestration-guardrails.ipynb](../guardrailing-engines/nim-compose-orchestration-guardrails.ipynb)
+5. [nim-kubernetes-orchestration-guardrails.ipynb](../guardrailing-engines/nim-kubernetes-orchestration-guardrails.ipynb)
 
 Canonical source of truth:
-- [README.md](guardrailing-engines/README.md)
+- [README.md](../guardrailing-engines/README.md)

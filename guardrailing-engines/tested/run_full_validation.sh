@@ -6,7 +6,7 @@ source ~/APPS_VENV/python_venv/run_3_14_2/bin/activate
 set -euo pipefail
 
 REPO_ROOT="/mnt/c/DEV/PROJECTS/ML_BASICS/machine-learning-labs"
-TEST_DIR="${REPO_ROOT}/self-attention-variants/guardrailing-engines/tested"
+TEST_DIR="${REPO_ROOT}/guardrailing-engines/tested"
 SWEEP_SCRIPT="${TEST_DIR}/run_guardrail_nb_sweep.sh"
 
 cd "${REPO_ROOT}"

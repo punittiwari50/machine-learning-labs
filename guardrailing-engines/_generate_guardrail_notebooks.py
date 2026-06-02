@@ -6,7 +6,7 @@ from datetime import date
 from pathlib import Path
 from uuid import uuid4
 
-BASE = Path("self-attention-variants/guardrailing-engines")
+BASE = Path("guardrailing-engines")
 README = BASE / "README.md"
 TODAY = date.today().isoformat()
 

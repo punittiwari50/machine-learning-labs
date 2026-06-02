@@ -4,16 +4,16 @@ This document compares the same topic implementation across three libraries usin
 
 ## Implementations
 
-- NumPy: `basic_attention_numpy.py`
-- PyTorch: `basic_attention_torch.py`
-- TensorFlow: `basic_attention_tensorflow.py`
-- Shared preprocessing: `shared_text_preprocessing.py`
+- NumPy: `scripts/basic_attention_numpy.py`
+- PyTorch: `scripts/basic_attention_torch.py`
+- TensorFlow: `scripts/basic_attention_tensorflow.py`
+- Shared preprocessing: `scripts/shared_text_preprocessing.py`
 
 ## Advanced Script Variants
 
-- NumPy advanced script: `advanced_attention_numpy.py`
-- PyTorch advanced script: `advanced_attention_torch.py`
-- TensorFlow advanced script: `advanced_attention_tensorflow.py`
+- NumPy advanced script: `scripts/advanced_attention_numpy.py`
+- PyTorch advanced script: `scripts/advanced_attention_torch.py`
+- TensorFlow advanced script: `scripts/advanced_attention_tensorflow.py`
 
 ## Notebook Variants
 
@@ -30,21 +30,21 @@ This document compares the same topic implementation across three libraries usin
 ## Execution Commands (WSL)
 
 ```bash
-wsl -d Ubuntu -- bash -c "source ~/.bashrc_dev; source ~/APPS_VENV/python_venv/run_3_14_2/bin/activate; python self-attention-variants/basic_attention_numpy.py"
-wsl -d Ubuntu -- bash -c "source ~/.bashrc_dev; source ~/APPS_VENV/python_venv/run_3_14_2/bin/activate; python self-attention-variants/basic_attention_torch.py"
-wsl -d Ubuntu -- bash -c "source ~/.bashrc_dev; source ~/APPS_VENV/python_venv/run_3_14_2/bin/activate; python self-attention-variants/basic_attention_tensorflow.py"
+wsl -d Ubuntu -- bash -c "source ~/.bashrc_dev; source ~/APPS_VENV/python_venv/run_3_14_2/bin/activate; python self-attention-variants/scripts/basic_attention_numpy.py"
+wsl -d Ubuntu -- bash -c "source ~/.bashrc_dev; source ~/APPS_VENV/python_venv/run_3_14_2/bin/activate; python self-attention-variants/scripts/basic_attention_torch.py"
+wsl -d Ubuntu -- bash -c "source ~/.bashrc_dev; source ~/APPS_VENV/python_venv/run_3_14_2/bin/activate; python self-attention-variants/scripts/basic_attention_tensorflow.py"
 ```
 
 Run all variants with one command:
 
 ```bash
-wsl -d Ubuntu -- bash -c "source ~/.bashrc_dev; source ~/APPS_VENV/python_venv/run_3_14_2/bin/activate; python self-attention-variants/run_attention_benchmarks.py"
+wsl -d Ubuntu -- bash -c "source ~/.bashrc_dev; source ~/APPS_VENV/python_venv/run_3_14_2/bin/activate; python self-attention-variants/scripts/run_attention_benchmarks.py"
 ```
 
 Consolidated run across all basic+advanced scripts:
 
 ```bash
-wsl -d Ubuntu -- bash -c "source ~/.bashrc_dev; source ~/APPS_VENV/python_venv/run_3_14_2/bin/activate; python self-attention-variants/run_attention_benchmarks.py"
+wsl -d Ubuntu -- bash -c "source ~/.bashrc_dev; source ~/APPS_VENV/python_venv/run_3_14_2/bin/activate; python self-attention-variants/scripts/run_attention_benchmarks.py"
 ```
 
 ## Last Verified Outputs
@@ -61,7 +61,7 @@ wsl -d Ubuntu -- bash -c "source ~/.bashrc_dev; source ~/APPS_VENV/python_venv/r
 
 ## Consolidated Snapshot (2026-06-01)
 
-Source: `python self-attention-variants/run_attention_benchmarks.py`
+Source: `python self-attention-variants/scripts/run_attention_benchmarks.py`
 
 | label | library | variant | runtime | accuracy | best_temp | dense_ms | sparse_ms | linear_ms | gqa_ms | sparse_mse | linear_mse | gqa_mse |
 |---|---|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
