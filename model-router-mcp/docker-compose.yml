@@ -1,0 +1,28 @@
+services:
+  mcp-router:
+    build:
+      context: .
+    image: model-router-mcp:latest
+    container_name: model-router-mcp
+    restart: unless-stopped
+    environment:
+      GEMMA_BASE_URL: http://ollama-gemma:11434
+      DEEPSEEK_BASE_URL: http://ollama-deepseek:11434
+      QWEN_BASE_URL: http://ollama-qwen:11434
+      GEMMA_MODEL: gemma3:latest
+      DEEPSEEK_MODEL: deepseek-r1:latest
+      QWEN_MODEL: qwen3:latest
+      MCP_TRANSPORT: streamable-http
+      MCP_HOST: 0.0.0.0
+      MCP_PORT: 8088
+      MCP_MOUNT_PATH: /
+    networks:
+      - mcp_model_net
+    ports:
+      - "8088:8088"
+    command: ["model-router-mcp"]
+
+networks:
+  mcp_model_net:
+    external: true
+    name: mcp_model_net

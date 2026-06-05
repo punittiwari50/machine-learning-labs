@@ -1,0 +1,29 @@
+name: deepseek-stack
+
+services:
+  ollama-deepseek:
+    image: ollama/ollama:latest
+    container_name: ollama-deepseek
+    restart: unless-stopped
+    ports:
+      - "11435:11434"
+    volumes:
+      - ollama_data:/root/.ollama
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: all
+              capabilities: [gpu]
+    networks:
+      - mcp_model_net
+
+volumes:
+  ollama_data:
+    name: ollama_data
+
+networks:
+  mcp_model_net:
+    external: true
+    name: mcp_model_net

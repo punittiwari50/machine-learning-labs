@@ -79,6 +79,7 @@ wsl -d Ubuntu -- bash -c "source ~/.bashrc_dev; source ~/APPS_VENV/python_venv/r
 - `/code-quality-review`
 - `/deep-research`
 - `/system-design`
+- `/local-mcp-only`
 
 ## 6) Reference Files
 
